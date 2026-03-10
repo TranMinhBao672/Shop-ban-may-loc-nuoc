@@ -156,11 +156,32 @@ section {
     margin: 6px 0;
 }
 
-.benefits {
-    list-style: none;
-    font-size: 18px;
-    margin-top: 20px;
-    padding: 0;
+.benefits{
+list-style:none;
+max-width:700px;
+margin:30px auto;
+}
+
+.benefits li{
+display:flex;
+align-items:center;
+gap:15px;
+background:white;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.benefits img{
+width:50px;
+height:50px;
+}
+
+.benefits p{
+margin:5px 0 0 0;
+font-size:15px;
+color:#555;
 }
 
 .news-list {
