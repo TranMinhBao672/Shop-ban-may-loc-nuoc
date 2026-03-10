@@ -109,13 +109,13 @@ section {
 }
 
 .product-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: white;
     background: #0077cc;
-    padding: 6px 12px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
+    display: inline-block;
+    border: none;
 }
 
 .product-card a:hover {
