@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f8fb;
     color: #333;
     line-height: 1.6;
 }
+
 
 nav {
     background-color: #0077cc;
@@ -28,6 +30,7 @@ nav a:hover {
     color: yellow;
 }
 
+
 h1 {
     margin: 20px;
     text-align: center;
@@ -38,6 +41,7 @@ p {
     margin: 10px 20px;
 }
 
+
 ul {
     margin: 20px;
 }
@@ -46,6 +50,49 @@ ul li {
     margin: 8px 0;
 }
 
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.banner {
+    background: linear-gradient(#0077cc,#00aaff);
+    color: white;
+    padding: 80px 20px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #0077cc;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #e6e6e6;
+}
+
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
 .product-card {
     background: white;
     width: 250px;
@@ -53,7 +100,6 @@ ul li {
     margin: 15px;
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    display: inline-block;
     text-align: center;
 }
 
@@ -62,19 +108,28 @@ ul li {
     border-radius: 5px;
 }
 
-.product-card button {
+.product-card a {
+    display: inline-block;
     margin-top: 10px;
-    padding: 8px 12px;
-    border: none;
-    background-color: #0077cc;
     color: white;
-    cursor: pointer;
+    background: #0077cc;
+    padding: 6px 12px;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.product-card button:hover {
-    background-color: #005fa3;
+.product-card a:hover {
+    background: #005fa3;
 }
+
+
+.benefits {
+    list-style: none;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0;
+}
+
 
 .error-404 {
     text-align: center;
@@ -94,59 +149,4 @@ ul li {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}
-
-section{
-padding:40px 20px;
-text-align:center;
-}
-
-.banner{
-background: linear-gradient(#0077cc,#00aaff);
-color:white;
-padding:80px 20px;
-}
-
-.banner h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:10px 20px;
-background:white;
-color:#0077cc;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-.product-list{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:20px;
-}
-
-.product-card a{
-display:inline-block;
-margin-top:10px;
-color:white;
-background:#0077cc;
-padding:6px 12px;
-text-decoration:none;
-border-radius:5px;
-}
-
-.product-card a:hover{
-background:#005fa3;
-}
-
-.benefits{
-list-style:none;
-font-size:18px;
-margin-top:20px;
 }
