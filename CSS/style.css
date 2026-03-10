@@ -57,7 +57,7 @@ section {
 }
 
 .banner {
-    background: linear-gradient(#0077cc,#00aaff);
+    background: linear-gradient(#0077cc, #00aaff);
     color: white;
     padding: 80px 20px;
 }
@@ -70,17 +70,17 @@ section {
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px 20px;
-    background: white;
-    color: #0077cc;
+    background: #0077cc;
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-weight: bold;
 }
 
 .btn:hover {
-    background: #e6e6e6;
+    background: #005fa3;
 }
 
 
@@ -99,7 +99,7 @@ section {
     padding: 15px;
     margin: 15px;
     border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
