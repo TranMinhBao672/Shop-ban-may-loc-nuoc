@@ -12,11 +12,12 @@ body {
     line-height: 1.6;
 }
 
-
 nav {
     background-color: #0077cc;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 12px;
 }
 
 nav a {
@@ -392,7 +393,7 @@ details p {
 
 /* TOPBAR */
 .topbar {
-    background: #ff5722;
+    background: #0077cc;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -406,7 +407,7 @@ details p {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: #ff5722;
+    background: #0077cc;
     color: white;
 }
 
