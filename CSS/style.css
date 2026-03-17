@@ -31,6 +31,24 @@ nav a:hover {
     color: yellow;
 }
 
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
 
 h1 {
     margin: 20px;
@@ -306,20 +324,48 @@ details p {
     display: none;
 }
 
-.slider-btn {
-    background: #0077cc;
+.slider {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: 0.5s;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* BUTTON */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     font-size: 25px;
-    padding: 10px 15px;
-    border-radius: 50%;
+    padding: 10px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 50%;
 }
 
-.slider-btn:hover {
-    background: #005fa3;
-    transform: scale(1.1);
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slide-btn:hover {
+    background: black;
 }
 
 /* CONTACT */

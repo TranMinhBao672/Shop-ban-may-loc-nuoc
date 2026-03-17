@@ -11,15 +11,27 @@
 
 <script>
 
-    const list = document.querySelector(".product-list");
+    const slides = document.querySelector(".slides");
+    const images = document.querySelectorAll(".slides img");
 
-    document.querySelector(".next").onclick = () => {
-        list.scrollLeft += 300;
-    };
+    let index = 0;
 
-    document.querySelector(".prev").onclick = () => {
-        list.scrollLeft -= 300;
-    };
+    function showSlide(i) {
+        if (i >= images.length) index = 0;
+        else if (i < 0) index = images.length - 1;
+        else index = i;
+
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    /* NÚT */
+    document.querySelector(".next").onclick = () => showSlide(index + 1);
+    document.querySelector(".prev").onclick = () => showSlide(index - 1);
+
+    /* AUTO CHẠY */
+    setInterval(() => {
+        showSlide(index + 1);
+    }, 3000);
 
 </script>
 
@@ -53,16 +65,19 @@
     </nav>
 
     <!-- BANNER -->
-    <section class="main-banner">
+    <section class="slider">
 
-        <div class="banner-left">
-            <img src="Images/banner.jpg">
-        </div>
+        <button class="slide-btn prev">&#10094;</button>
 
-        <div class="banner-right">
+        <div class="slides">
+
+            <img src="Images/banner1.jpg">
             <img src="Images/banner2.jpg">
             <img src="Images/banner3.jpg">
+
         </div>
+
+        <button class="slide-btn next">&#10095;</button>
 
     </section>
 
