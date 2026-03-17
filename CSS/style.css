@@ -334,7 +334,6 @@ details p {
 
 .slides {
     display: flex;
-    width: 300%;
     transition: 0.5s;
 }
 
