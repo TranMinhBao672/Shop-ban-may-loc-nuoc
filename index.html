@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
+<script>
+
+    const list = document.querySelector(".product-list");
+
+    document.querySelector(".next").onclick = () => {
+        list.scrollLeft += 300;
+    };
+
+    document.querySelector(".prev").onclick = () => {
+        list.scrollLeft -= 300;
+    };
+
+</script>
+
 <body>
 
     <nav>
@@ -42,30 +56,39 @@
     <section>
         <h2>Sản phẩm nổi bật</h2>
 
-        <div class="product-list">
+        <div class="product-slider">
 
-            <div class="product-card">
-                <img src="Images/Product1.webp">
-                <h3>Máy lọc nước RO</h3>
-                <p>Giá: 5.000.000 VNĐ</p>
-                <a href="products/ro.html">Xem chi tiết</a>
+            <button class="slider-btn prev">&#10094;</button>
+
+            <div class="product-list">
+
+                <div class="product-card">
+                    <img src="Images/Product1.webp">
+                    <h3>Máy lọc nước RO</h3>
+                    <p>Giá: 5.000.000 VNĐ</p>
+                    <a href="products/ro.html">Xem chi tiết</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/Product2.webp">
+                    <h3>Máy lọc nước Nano</h3>
+                    <p>Giá: 4.000.000 VNĐ</p>
+                    <a href="products/nano.html">Xem chi tiết</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="Images/Product3.webp">
+                    <h3>Máy lọc nước Hydrogen</h3>
+                    <p>Giá: 7.000.000 VNĐ</p>
+                    <a href="products/hydrogen.html">Xem chi tiết</a>
+                </div>
+
             </div>
 
-            <div class="product-card">
-                <img src="Images/Product2.webp">
-                <h3>Máy lọc nước Nano</h3>
-                <p>Giá: 4.000.000 VNĐ</p>
-                <a href="products/nano.html">Xem chi tiết</a>
-            </div>
-
-            <div class="product-card">
-                <img src="Images/Product3.webp">
-                <h3>Máy lọc nước Hydrogen</h3>
-                <p>Giá: 7.000.000 VNĐ</p>
-                <a href="products/hydrogen.html">Xem chi tiết</a>
-            </div>
+            <button class="slider-btn next">&#10095;</button>
 
         </div>
+
     </section>
 
     <section>
@@ -105,17 +128,6 @@
                 </div>
             </li>
 
-        </ul>
-
-    </section>
-
-    <section>
-        <h2>Tin tức & Hướng dẫn</h2>
-
-        <ul>
-            <li><a href="news.html">Cách chọn máy lọc nước cho gia đình</a></li>
-            <li><a href="news.html">RO và Nano khác nhau thế nào?</a></li>
-            <li><a href="news.html">Bao lâu nên thay lõi lọc nước?</a></li>
         </ul>
 
     </section>
