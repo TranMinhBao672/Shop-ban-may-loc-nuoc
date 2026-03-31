@@ -437,6 +437,14 @@ details p {
     transform: scale(1.05);
 }
 
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 /* TOPBAR */
 .topbar {
     background: #0077cc;
