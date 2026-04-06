@@ -549,3 +549,59 @@ details p {
 .icon-item:hover {
     transform: translateY(-5px);
 }
+
+.related-section {
+    padding: 30px;
+}
+
+.related-section h2 {
+    margin-bottom: 20px;
+}
+
+.related-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.related-card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.related-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.related-card .category {
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.related-card h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.related-card .price {
+    color: red;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.related-card a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
