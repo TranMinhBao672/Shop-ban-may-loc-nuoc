@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Chi tiết RO A1</title>
-  <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <nav>
-    <a href="../index.html">Trang chủ</a>
-    <a href="../TrangChu/about.html">Giới thiệu</a>
-    <a href="danhsach.html">Sản phẩm</a>
-  </nav>
+<div class="container">
+    <div class="product-card">
+        <div class="product-images">
+            <div class="main-image">
+                <img src="https://via.placeholder.com/450" alt="Máy lọc nước">
+            </div>
+            <div class="thumbnail-list">
+                <img src="https://via.placeholder.com/80" class="active">
+                <img src="https://via.placeholder.com/80">
+                <img src="https://via.placeholder.com/80">
+                <img src="https://via.placeholder.com/80">
+            </div>
+        </div>
 
-  <section class="product-detail">
+        <div class="product-info">
+            <h1 class="product-title">
+                <span class="badge">Yêu thích+</span>
+                Máy Lọc Nước RO AQUA 2 Vòi 11 Cấp Lọc - Uống Trực Tiếp Không Cần Đun Sôi
+            </h1>
+            
+            <div class="product-stats">
+                <span class="rating">4.5 ★★★★★</span> | 
+                <span class="sold">2 Đánh giá</span>
+            </div>
 
-    <div class="product-image">
-      <img src="../Images/Product1.webp" alt="Máy lọc nước RO A1">
+            <div class="price-container">
+                <span class="current-price">2.500.000₫</span>
+                <span class="promo-tag">Giá Sau Voucher</span>
+            </div>
+
+            <div class="product-options">
+                <div class="option-row">
+                    <span class="label">Vận Chuyển</span>
+                    <span class="value">Miễn phí vận chuyển</span>
+                </div>
+                <div class="option-row">
+                    <span class="label">Số Lượng</span>
+                    <div class="quantity-input">
+                        <button>-</button>
+                        <input type="number" value="1">
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary">Thêm Vào Giỏ Hàng</button>
+                <button class="btn btn-primary">Mua Ngay</button>
+            </div>
+        </div>
     </div>
 
-    <div class="product-info">
+    <div class="detail-section">
+        <h3>CHI TIẾT SẢN PHẨM</h3>
+        <table class="detail-table">
+            <tr><td>Danh Mục</td><td>Shopee > Thiết Bị Điện Gia Dụng > Máy lọc nước</td></tr>
+            <tr><td>Thương hiệu</td><td>AQUA</td></tr>
+            <tr><td>Hạn bảo hành</td><td>12 tháng</td></tr>
+            <tr><td>Trọng lượng</td><td>23kg</td></tr>
+        </table>
 
-      <h1>RO Model A1</h1>
-
-      <p class="price">Giá: 5.000.000 VNĐ</p>
-
-      <ul>
-        <li><b>Bảo hành:</b> 24 tháng</li>
-        <li><b>Công suất:</b> 15L/h</li>
-        <li><b>Công nghệ:</b> RO lọc 5 cấp</li>
-        <li><b>Phù hợp:</b> Gia đình 4–6 người</li>
-      </ul>
-
-      <a class="btn" href="#">Mua ngay</a>
-
+        <h3>MÔ TẢ SẢN PHẨM</h3>
+        <p class="description">
+            Máy Lọc Nước RO AQUA 11 Cấp Lọc 2 Vòi là giải pháp lọc nước hiện đại cho gia đình...
+        </p>
     </div>
-
-  </section>
-
-  <section>
-
-    <h2>Mô tả sản phẩm</h2>
-
-    <p>
-      Máy lọc nước RO Model A1 sử dụng công nghệ lọc RO hiện đại
-      giúp loại bỏ tạp chất, vi khuẩn và kim loại nặng trong nước.
-      Sản phẩm phù hợp cho gia đình muốn sử dụng nguồn nước sạch
-      và an toàn.
-    </p>
-
-  </section>
-
-  <br>
-
-  <a href="danhsach.html">← Quay lại danh sách</a>
+</div>
 
 </body>
-
 </html>
